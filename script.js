@@ -80,3 +80,7 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+//to show alert when you click submit at the end
+function show(){
+  alert("thanks");
+}
