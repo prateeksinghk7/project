@@ -1,7 +1,7 @@
-let menuBtn = document.querySelector(".hamburgerMenu");
+let menuBtn = document.querySelector(".sideMenu");
 let showMenu = document.querySelector("#showMenu");
 let navBar = document.querySelector("nav");
-let arrowUp = document.querySelector(".fa-up");
+let arrowUp = document.querySelector(".fa-chevrons-up");
 let clicked = false;
 
 // add events to the elements
@@ -14,7 +14,7 @@ function showNavBar() {
     showMenu.style.display = "inline-block";
     showMenu.style.animation = "show .3s ease 0s 1 normal both";
     navBar.style.display = "inline-block";
-    navBar.style.animation = "show .3s ease 0s 1 normal both";
+    navBar.style.animation = "show 0.3s ease 0s 1 normal both";
 
     clicked = true;
   } else if (clicked == true) {          //for nav bar to go in when the desktop is small
@@ -73,12 +73,13 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");  //className returns the class attribute i.e. it will make active dots back to normal 
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
 
 //to show alert when you click submit at the end
 function show(){
