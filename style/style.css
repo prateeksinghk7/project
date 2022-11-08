@@ -124,14 +124,14 @@ header nav a:hover {
     color: #FFD60A;
 }
 
-header .hamburgerMenu { /*this is for side menu when we shrink our screen  */
+header .sideMenu { /*this is for side menu when we shrink our screen  */
     display: none;
     position: absolute;
+    left:240px;
     color: #55f8a1;
     background-color: transparent;
     border: 10px solid b;
     font-size: 1em;
-    right: 0;
     margin-right: 40px;
     cursor: pointer;
 }
@@ -561,7 +561,7 @@ header #showMenu {  /*this is for side navbar when view is small   */
     color: #fd0b0b;
 }
 
-.fa-up {            /*this is make upbar at left side*/
+.fa-chevrons-up {            /*this is make upbar at left side*/
     opacity: 0;
     position: fixed;
     color: #11ed83ad;
@@ -572,7 +572,7 @@ header #showMenu {  /*this is for side navbar when view is small   */
     transition: 0.2s;
 }
 
-.fa-up:hover {
+.fa-chevrons-up:hover {
     color: #ffffff;
 }
 
